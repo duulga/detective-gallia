@@ -25,6 +25,7 @@ from gallia.commands.scan.uds.reset import ResetScanner
 from gallia.commands.scan.uds.sa_dump_seeds import SASeedsDumper
 from gallia.commands.scan.uds.services import ServicesScanner
 from gallia.commands.scan.uds.sessions import SessionsScanner
+from gallia.commands.scan.uds.vulnerability import VulnerabilityScanner
 
 registry: list[type[BaseCommand]] = [
     DTCPrimitive,
@@ -44,6 +45,7 @@ registry: list[type[BaseCommand]] = [
     SendPDUPrimitive,
     ServicesScanner,
     SessionsScanner,
+    VulnerabilityScanner,
     VINPrimitive,
     WMBAPrimitive,
     WriteByIdentifierPrimitive,
@@ -68,6 +70,7 @@ __all__ = [
     "SendPDUPrimitive",
     "ServicesScanner",
     "SessionsScanner",
+    "VulnerabilityScanner",
     "VINPrimitive",
     "WMBAPrimitive",
     "WriteByIdentifierPrimitive",

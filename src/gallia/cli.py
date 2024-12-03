@@ -40,6 +40,7 @@ def load_parsers() -> Parsers:
         description="""gallia COMMANDs are grouped by GROUP and SUBGROUP.
         Each GROUP, SUBGROUP, or COMMAND contains a help page which can be accessed via `-h` or `--help`.
         A few command line option can be set via a TOML config file. Check `gallia --template` for a starting point.
+        This is detective-gallia version. You can use vuln-scan with gallia scan uds vulns <asdf>
         """,
         epilog="""https://fraunhofer-aisec.github.io/gallia/index.html""",
     )
